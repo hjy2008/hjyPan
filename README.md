@@ -1,3 +1,4 @@
+<link href="ico/hp.ico" rel="icon" type="image/x-ico">
 # hjyPan
 网盘
 
