@@ -7,7 +7,7 @@ if not os.path.isdir('.\\tmp'):
     os.mkdir('.\\tmp')
 
 with open('README.md', 'w', encoding = 'utf-8') as f:
-    f.write("# hjyPan\n\n[TOC]\n\n## 网盘列表\n\n")
+    f.write("# hjyPan\n\n## 网盘列表\n\n")
 
 
 def thumbnail_pic(jpgPath, tmpPath):
