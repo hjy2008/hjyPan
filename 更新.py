@@ -44,5 +44,15 @@ for k, v in zip(glob.glob('*.jpg'), glob.glob('.\\tmp\\*.jpg')):
 for k, v in zip(glob.glob('*.png'), glob.glob('.\\tmp\\*.png')):
     with open('README.md', 'a', encoding = 'utf-8') as f:
         f.writelines(f'#### <img src="{v}"/>[{k}](.\\{k})\n------\n\n')
+for i in os.listdir():
 
-
+    if not '.png' == i[-4:] \
+            and '.jpg' != i[-4:] \
+            and i != 'README.md' \
+            and '.py' != i[-3:] \
+            and not '.cmd' in i[-4:]\
+            and '.' in i\
+            and '.git' != i:
+        print(i)
+        with open('README.md', 'a', encoding = 'utf-8') as f:
+            f.writelines(f'#### [{i}](.\\{i})\n------\n\n')
